@@ -1,0 +1,28 @@
+<!--spandemo-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>spandemoL</title>
+<style>
+.letter{
+	background-color:green;
+}
+</style>
+</head>
+<body>
+<h2>welcome to bootcamp</h2>
+<p>
+<span id="t1" class="letter">bootcamp</span>
+is going 
+<span id="t2" class="letter">good</span>
+
+</p>
+<button type="button" onclick="changeText()">change text</button>
+<script>
+function changeText(){
+	document.getElementById('t1').innerHTML="The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. ... HTML describes the structure of a web page semantically and originally included cues for the appearance of the document. HTML elements are the building blocks of HTML pages.";
+
+}
+</script>
+</body>
+</html>
