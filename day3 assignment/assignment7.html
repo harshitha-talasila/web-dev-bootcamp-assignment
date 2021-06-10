@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<title>Assignment-7</title>
+
+<style>
+p{
+color: rebeccapurple;
+}
+</style>
+</head>
+<body>
+<h3>Your Favourite sport:</h3>
+<label for="gender">Gender</label>
+<input type="Radio" id="gender" name="gender" value="female"/>Female
+<input type="Radio" id="gender" name="gender" value="male">Male
+<br>
+<input type="checkbox" id="cricket" name="cricket">cricket
+<input type="checkbox" id="football" name="football">football
+</br>
+<button onclick="readData()">Submit</button>
+<p id="result"></p>
+<script>
+function readData() {
+var cricket=document.getElementById('cricket');
+var football=document.getElementById('football');
+var res;
+var gender=document.getElementById('gender').value;
+alert(gender)
+if(cricket.checked == true && football.checked == true){
+res='cricket, football';
+}else if(cricket.checked == false && football.checked == true){
+res='football only';
+}else if(cricket.checked == true && football.checked == false){
+res='cricket only';
+}else{
+res='None';
+}
+document.getElementById('result').innerHTML=res;
+
+}
+</script>
+</body>
+</html>
+
+
